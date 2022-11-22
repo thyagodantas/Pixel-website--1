@@ -1,10 +1,229 @@
+/*Bg*/
+$bg-image: "../imagens/capa.png";
+$logo: "../imagens/logo.png";
+$device: "../imagens/device.png";
+/****/
+
+/*Colors*/
+/****/
+
+/*Clear*/
+.clear {
+  clear: both;
+}
+/****/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html,
 body {
   height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+  padding: 40px 2%;
+  /*max-height: 700px;*/
+  background-size: cover;
+  background-position: center;
+  background-image: url($bg-image);
+  font-weight: 300;
+
+  & .logo {
+    float: left;
+    width: 160px;
+    height: 85px;
+    background-image: url($logo);
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+  }
+
+  & nav {
+    float: right;
+  }
+
+  & nav.desktop-menu ul {
+    list-style-type: none;
+  }
+
+  & nav.desktop-menu li {
+    float: left;
+    padding: 0 15px;
+  }
+
+  & nav.desktop-menu ul a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+nav.mobile-menu {
+  display: none;
+}
+
+.div-call-1 {
+  float: right;
+  margin: 140px 150px;
+  max-width: 500px;
+
+  & h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+  }
+
+  & p {
+    margin-top: 10px;
+    font-weight: 300;
+    color: white;
+  }
+}
+
+section.section-one {
+  width: 100%;
+  background-color: #472562;
+  padding: 0 2%;
+  height: 360px;
+
+  & .container {
+    max-width: 1000px;
+  }
+}
+
+.text-section-one {
+  float: left;
+  width: 50%;
+  position: relative;
+  left: 45px;
+  margin-top: 60px;
+  padding-left: 80px;
+  color: white;
+
+  & h2 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+
+  & p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  & ul {
+    font-size: 15px;
+    list-style-position: inside;
+  }
+
+  & ul li {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+.btn-one {
+  background-color: #ff703d;
+  width: 165px;
+  height: 44px;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 30px;
+}
+
+.device-section-one {
+  float: left;
+  width: 50%;
+  position: relative;
+  top: -70px;
+  height: 430px;
+  background-image: url($device);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 947px) {
+  header {
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    padding: 40px 2%;
+  }
+
+  nav.desktop-menu {
+    display: none;
+  }
+
+  nav.mobile-menu {
+    display: block;
+  }
+
+  .div-call-1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+    max-width: none;
+
+    & h2 {
+      font-size: 30px;
+      font-weight: 300;
+      padding: 0 10px;
+      color: white;
+    }
+
+    & p {
+      margin-top: 10px;
+      font-weight: 300;
+      color: white;
+    }
+  }
+
+  section.section-one {
+    padding: 40px 2%;
+    height: auto;
+    text-align: center;
+  }
+
+  .text-section-one {
+    width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+    position: static;
+    float: none;
+    display: inline-block;
+
+    & ul {
+      display: inline-block;
+      margin: 20px;
+    }
+
+    & ul li {
+      float: none;
+      text-align: left;
+    }
+  }
+
+  .btn-one {
+    display: inline-block;
+  }
+
+  .device-section-one {
+    display: none;
+  }
 }

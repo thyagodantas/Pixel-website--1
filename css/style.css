@@ -108,7 +108,8 @@ section.section-one .container {
 }
 .text-section-one ul {
   font-size: 15px;
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 15px;
 }
 .text-section-one ul li {
   float: left;
@@ -140,6 +141,51 @@ section.section-one .container {
   background-size: 100% 100%;
 }
 
+.section-two {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: white;
+  text-align: center;
+}
+.section-two h2 {
+  color: #472663;
+  font-weight: 300;
+}
+.section-two p {
+  margin-top: 30px;
+  max-width: 900px;
+  display: inline-block;
+}
+.section-two img {
+  width: 100%;
+  margin-top: 40px;
+  border: 0.5px solid black;
+  border-radius: 7px;
+}
+.section-two .container {
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 952px) {
+  .div-call-1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 170px 0;
+    max-width: none;
+  }
+  .div-call-1 h2 {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 0 10px;
+    color: white;
+  }
+  .div-call-1 p {
+    margin-top: 10px;
+    font-weight: 300;
+    color: white;
+  }
+}
 @media screen and (max-width: 947px) {
   header {
     width: 100%;
@@ -152,6 +198,36 @@ section.section-one .container {
   }
   nav.mobile-menu {
     display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../imagens/mobile.svg");
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+  nav.mobile-menu ul {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    top: 75px;
+    text-align: center;
+    list-style-type: none;
+  }
+  nav.mobile-menu ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+  }
+  nav.mobile-menu ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  nav.mobile-menu:hover ul {
+    opacity: 1;
+  }
+  nav.mobile-menu ul li:hover {
+    background-color: rgb(230, 230, 230);
   }
   .div-call-1 {
     float: none;
@@ -197,5 +273,8 @@ section.section-one .container {
   }
   .device-section-one {
     display: none;
+  }
+  .section-two {
+    padding: 40px 2%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -28,6 +28,7 @@ body {
 header {
   width: 100%;
   height: 90vh;
+  min-height: 800px;
   padding: 40px 2%;
   /*max-height: 700px;*/
   background-size: cover;

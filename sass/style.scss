@@ -3,9 +3,11 @@ $bg-image: "../imagens/capa.png";
 $logo: "../imagens/logo.png";
 $device: "../imagens/device.png";
 $mobile: "../imagens/mobile.svg";
+$author: "../imagens/author.jpg";
 /****/
 
 /*Colors*/
+$author-text-color: #232323;
 /****/
 
 /*Clear*/
@@ -101,6 +103,7 @@ section.section-one {
 
   & .container {
     max-width: 1000px;
+    height: calc(100% + 30px);
   }
 }
 
@@ -154,7 +157,7 @@ section.section-one {
   width: 50%;
   position: relative;
   top: -70px;
-  height: 430px;
+  height: 110%;
   background-image: url($device);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -178,14 +181,120 @@ section.section-one {
   }
 
   & img {
+    position: relative;
+    top: 70px;
     width: 100%;
-    margin-top: 40px;
-    border: 0.5px solid black;
-    border-radius: 7px;
+    margin-top: 30px;
+    box-shadow: black;
   }
 
   & .container {
     max-width: 1000px;
+  }
+}
+
+.section-three {
+  width: 100%;
+
+  & .part-one {
+    float: left;
+    color: white;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835fa7;
+  }
+
+  & .part-one h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+  }
+
+  & .part-one p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+  }
+
+  & .wraper-part-one {
+    max-width: 600px;
+    float: right;
+    padding-right: 30px;
+  }
+}
+
+.part-two {
+  float: left;
+  width: 50%;
+  padding: 140px 0 90px 0;
+}
+
+.about-author {
+  float: left;
+  max-width: 600px;
+  padding-left: 30px;
+
+  & .author-title {
+    float: left;
+    width: 100%;
+  }
+
+  & .author-title .wraper-title-author {
+    float: left;
+  }
+
+  & .author-title h2 {
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    color: $author-text-color;
+  }
+
+  & .author-title p {
+    font-size: 14px;
+    color: $author-text-color;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  & .img-author {
+    position: relative;
+    top: 2px;
+    float: left;
+    width: 40px;
+    padding-top: 40px;
+    border-radius: 20px;
+    background-image: url($author);
+    background-position: center;
+    background-size: cover;
+  }
+
+  & .text-author {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 350px;
+  }
+
+  & .text-author p {
+    color: $author-text-color;
+    font-size: 15px;
+  }
+}
+
+.slider-bullets {
+  float: left;
+  width: 100%;
+  margin-top: 12px;
+  padding-left: 30px;
+
+  & span {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: rgb(200, 200, 200);
   }
 }
 

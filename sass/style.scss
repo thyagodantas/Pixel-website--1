@@ -325,6 +325,7 @@ section.section-four {
     float: left;
     width: 50%;
     color: white;
+    padding-left: 10px;
   }
 
   & .form h2 {
@@ -336,6 +337,7 @@ section.section-four {
     font-size: 15px;
     font-weight: 300;
     max-width: 400px;
+    padding-right: 10px;
   }
 
   & .form form {
@@ -343,7 +345,7 @@ section.section-four {
   }
 
   & .form form input[type="text"] {
-    width: 100%;
+    width: 90%;
     max-width: 480px;
     margin-top: 5px;
     height: 58px;
@@ -353,7 +355,7 @@ section.section-four {
   }
 
   & .form form textarea {
-    width: 100%;
+    width: 90%;
     height: 160px;
     margin-top: 8px;
     max-width: 480px;
@@ -366,6 +368,51 @@ section.section-four {
     margin-top: 15px;
   }
 }
+
+/* MAP SECTION*/
+
+.map-wraper {
+  float: left;
+  width: 50%;
+  color: white;
+  padding: 0 10px;
+
+  & h2 {
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  & .map-wraper3 {
+    width: 100%;
+    margin-top: 10px;
+    max-width: 480px;
+    position: relative;
+  }
+
+  & .map-wraper2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  & .map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../imagens/map.png);
+    background-position: center;
+    background-size: cover;
+    border: 5px solid rgb(200, 200, 200);
+  }
+}
+
+/* END MAP SECTION */
+
+/* End section four */
 
 /* Start media querys */
 @media screen and (max-width: 952px) {
@@ -391,7 +438,7 @@ section.section-four {
   }
 }
 
-@media screen and (max-width: 947px) {
+@media screen and (max-width: 768px) {
   header {
     width: 100%;
     height: auto;
@@ -498,6 +545,41 @@ section.section-four {
 
   .section-two {
     padding: 40px 2%;
+  }
+
+  section.section-four {
+    & .container {
+      text-align: center;
+    }
+
+    & .form {
+      float: none;
+      width: 100%;
+    }
+
+    & .form p {
+      display: inline-block;
+      float: none;
+    }
+
+    & .map-wraper {
+      float: none;
+      width: 100%;
+      margin-top: 40px;
+      padding: 0 4%;
+    }
+
+    & .map-wraper2 {
+      padding-top: 0;
+      height: 100%;
+    }
+
+    & .map-wraper3 {
+      display: inline-block;
+      max-width: none;
+      width: 80%;
+      padding-top: 80%;
+    }
   }
 }
 

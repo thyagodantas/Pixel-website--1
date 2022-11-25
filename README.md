@@ -2,6 +2,12 @@
 
 The website was built with HTML5, CSS3, SCSS and JS.
 
+## See the complete project
+
+
+[Click here!](https://thyagodantas.github.io/Pixel-website--1/)
+
+
 ## Releases
 
 #### 0.1

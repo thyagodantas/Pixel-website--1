@@ -31,7 +31,7 @@ body {
 header {
   width: 100%;
   height: 90vh;
-  min-height: 800px;
+  min-height: 600px;
   padding: 40px 2%;
   /*max-height: 700px;*/
   background-size: cover;
@@ -40,12 +40,15 @@ header {
   font-weight: 300;
 }
 header .logo {
-  float: left;
-  width: 160px;
-  height: 85px;
+  position: absolute;
+  top: 0;
+  left: 5;
+  margin-top: 20px;
+  width: 180px;
+  height: 80px;
   background-image: url("../imagens/logo.png");
-  background-color: white;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 header nav {
@@ -362,6 +365,46 @@ section.section-four .btn-one.sendForm {
 
 /* END MAP SECTION */
 /* End section four */
+footer {
+  width: 100%;
+  padding: 15px 2%;
+  color: white;
+  background-color: #192123;
+}
+footer p:nth-of-type(1) {
+  margin-top: 20px;
+  float: left;
+  font-size: 16px;
+}
+footer p:nth-of-type(2) {
+  margin-top: 20px;
+  margin-left: 5px;
+  float: left;
+  font-size: 16px;
+}
+footer .container p a {
+  box-shadow: inset 0 0 0 0 #7600c5;
+  color: #7600c5;
+  margin-left: 1px;
+  margin: 0 -0.1rem;
+  padding: 0 0.1rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+footer .container p a:hover {
+  box-shadow: inset 150px 0 0 0 #7600c5;
+  color: white;
+}
+
+.img-developer {
+  float: right;
+  background-image: url(../imagens/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 70px;
+}
+
 /* Start media querys */
 @media screen and (max-width: 952px) {
   .div-call-1 {
@@ -490,6 +533,7 @@ section.section-four .btn-one.sendForm {
     width: 100%;
     margin-top: 40px;
     padding: 0 4%;
+    margin-left: 15px;
   }
   section.section-four .map-wraper2 {
     padding-top: 0;
@@ -500,6 +544,20 @@ section.section-four .btn-one.sendForm {
     max-width: none;
     width: 80%;
     padding-top: 80%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer p:nth-of-type(1) {
+    float: none;
+  }
+  footer p:nth-of-type(2) {
+    float: none;
+  }
+  .img-developer {
+    display: inline-block;
+    margin-top: 2%;
+    float: none;
   }
 }
 @media screen and (max-width: 580px) {

@@ -8,6 +8,7 @@ $author: "../imagens/author.jpg";
 
 /*Colors*/
 $author-text-color: #232323;
+$section-four: #472563;
 /****/
 
 /*Clear*/
@@ -16,6 +17,7 @@ $author-text-color: #232323;
 }
 /****/
 
+/* Config page */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +35,9 @@ body {
   margin: 0 auto;
 }
 
+/* End config page */
+
+/* Start header config */
 header {
   width: 100%;
   height: 90vh;
@@ -94,6 +99,10 @@ nav.mobile-menu {
     color: white;
   }
 }
+
+/* End header config */
+
+/* Start section one */
 
 section.section-one {
   width: 100%;
@@ -197,34 +206,37 @@ section.section-one {
   }
 }
 
+/* End section one */
+
+/* Start section three */
 .section-three {
   width: 100%;
+}
 
-  & .part-one {
-    float: left;
-    color: white;
-    width: 50%;
-    padding: 140px 0 90px 0;
-    background-color: #835fa7;
-  }
+.part-one {
+  float: left;
+  color: white;
+  width: 50%;
+  padding: 140px 0 90px 0;
+  background-color: #835fa7;
+}
 
-  & .part-one h2 {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 23px;
-  }
+.part-one h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 23px;
+}
 
-  & .part-one p {
-    font-size: 15px;
-    line-height: 35px;
-    margin-top: 10px;
-  }
+.part-one p {
+  font-size: 15px;
+  line-height: 35px;
+  margin-top: 10px;
+}
 
-  & .wraper-part-one {
-    max-width: 600px;
-    float: right;
-    padding-right: 30px;
-  }
+.wraper-part-one {
+  max-width: 600px;
+  float: right;
+  padding: 0 30px;
 }
 
 .part-two {
@@ -302,6 +314,60 @@ section.section-one {
   }
 }
 
+/* End section three*/
+
+/* Start section four */
+section.section-four {
+  background-color: $section-four;
+  padding: 100px 0;
+
+  & .form {
+    float: left;
+    width: 50%;
+    color: white;
+  }
+
+  & .form h2 {
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  & .form p {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+  }
+
+  & .form form {
+    margin-top: 15px;
+  }
+
+  & .form form input[type="text"] {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 5px;
+    height: 58px;
+    padding: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+  }
+
+  & .form form textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 8px;
+    max-width: 480px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+  }
+
+  & .btn-one.sendForm {
+    width: 105px;
+    margin-top: 15px;
+  }
+}
+
+/* Start media querys */
 @media screen and (max-width: 952px) {
   .div-call-1 {
     float: none;
@@ -434,3 +500,22 @@ section.section-one {
     padding: 40px 2%;
   }
 }
+
+@media screen and (max-width: 580px) {
+  .part-one {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .part-two {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .section-two img {
+    top: 16px;
+    margin-top: 20px;
+  }
+}
+
+/* End media querys */
